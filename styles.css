@@ -1,0 +1,343 @@
+
+You sent
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-shadow: 2px 2px #f39c12;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #e74c3c;
+    border-left: 5px solid #f39c12;
+    padding-left: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #16a085;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(90deg, #8e44ad, #3498db);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f39c12;
+    color: #fff;
+    box-shadow: 0 0 10px #f39c12;
+}
+
+nav a.active {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+}
+
+.hero {
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+    border: 4px solid #f39c12;
+    box-shadow: 0 0 15px rgba(243, 156, 18, 0.6);
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #e74c3c, #f39c12);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #f39c12;
+}
+
+/* Sections */
+section {
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style: disc;
+    padding-left: 2rem;
+    color: #e74c3c;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+    color: #8e44ad;
+    border-left: 5px solid #f39c12;
+    padding-left: 1rem;
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(243, 156, 18, 0.4);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 3px solid #f39c12;
+}
+
+.tech, .status {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Contact */
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: #8e44ad;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #3498db;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #f39c12;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #16a085, #27ae60);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #27ae60;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    main {
+        padding: 1rem 0;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        margin: 0.5rem 0;
+    }
+}
+
+You sent
+/* Animated Background Gradient */
+body {
+    background: linear-gradient(270deg, #f39c12, #e74c3c, #8e44ad, #3498db);
+    background-size: 800% 800%;
+    animation: moveLights 20s ease infinite;
+}
+
+/* Keyframes for moving lights */
+@keyframes moveLights {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glowing Neon Effect for Headings */
+h1, h2, h3 {
+    position: relative;
+    animation: glowPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+    from {
+        text-shadow: 0 0 10px #f39c12, 0 0 20px #e74c3c, 0 0 30px #3498db;
+    }
+    to {
+        text-shadow: 0 0 20px #8e44ad, 0 0 30px #f39c12, 0 0 40px #27ae60;
+    }
+}
+
+/* Buttons with moving gradient lights */
+.btn, .btn-submit {
+    background: linear-gradient(270deg, #e74c3c, #f39c12, #16a085, #3498db);
+    background-size: 400% 400%;
+    animation: gradientFlow 8s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Project cards glowing border effect */
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    background: linear-gradient(270deg, #f39c12, #e74c3c, #8e44ad, #3498db);
+    background-size: 400% 400%;
+    animation: borderGlow 10s linear infinite;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+@keyframes borderGlow {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
